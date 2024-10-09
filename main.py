@@ -21,7 +21,7 @@ def calculate_cost(x, check):
     
     if(2*s1 <= x[1][0]) and ((2*s2 - door_s) <= x[1][2]):
         check = True
-        result = (x[1][0] * x[1][1]) + (x[1][2] * x[1][3])
+        result = (2*s1 * x[1][1]) + ((2*s2 - door_s) * x[1][3])
     
     if (check):
         f = open("стандартный вывод.txt", "w")
